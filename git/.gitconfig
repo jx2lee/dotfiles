@@ -1,0 +1,43 @@
+# This is Git's per-user configuration file.
+[user]
+name = jx2lee
+email = dev.jaejun.lee.1991@gmail.com
+
+[credential]
+helper = store
+
+[hub]
+protocol = https
+
+[http]
+postBuffer = 524288000
+
+# https://news.hada.io/topic?id=19441
+[core]
+fsmonitor = true
+untrackedCache = true
+
+[branch]
+sort = -committerdate
+
+[tag]
+sort = version:refname
+
+[init]
+defaultBranch = main
+
+[push]
+default = simple
+autoSetupRemote = true
+followTags = true
+
+[fetch]
+prune = true
+pruneTags = true
+all = true
+
+[commit]
+verbose = true
+
+[rebase]
+updateRefs = true

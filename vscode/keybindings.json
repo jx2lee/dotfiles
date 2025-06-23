@@ -1,0 +1,116 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "cmd+w",
+        "command": "workbench.action.terminal.kill",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+t",
+        "command": "workbench.action.terminal.new",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+shift+]",
+        "command": "workbench.action.terminal.focusNext",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+shift+[",
+        "command": "workbench.action.terminal.focusPrevious",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+n",
+        "command": "explorer.newFile",
+        "when": "explorerViewletFocus"
+    },
+    {
+        "key": "cmd+2",
+        "command": "-workbench.action.focusSecondEditorGroup"
+    },
+    {
+        "key": "ctrl+alt+cmd+shift+right",
+        "command": "workbench.action.increaseViewSize",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "ctrl+alt+cmd+shift+left",
+        "command": "workbench.action.decreaseViewSize",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "ctrl+alt+cmd+shift+up",
+        "command": "workbench.action.increaseViewSize",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+alt+cmd+shift+down",
+        "command": "workbench.action.decreaseViewSize",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "alt+cmd+l",
+        "command": "editor.action.formatDocument",
+        "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+    },
+    {
+        "key": "escape",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "terminalFocus && !isInEmbeddedEditor && !terminalTextSelected && !terminalFindVisible && !terminalFindInputFocused"
+    },
+    {
+        "key": "escape",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "explorerViewletFocus"
+    },
+    {
+        "key": "alt+cmd+z",
+        "command": "git.revertChange",
+        "when": "textCompareEditorVisible"
+    },
+    {
+        "key": "cmd+b",
+        "command": "editor.action.goToDeclaration",
+        "when": "editorTextFocus && editorLangId == 'makefile'"
+    },
+    {
+        "key": "cmd+i",
+        "command": "composerMode.agent"
+    },
+    {
+        "key": "cmd+3",
+        "command": "outline.focus",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+n",
+        "command": "explorer.newFolder",
+        "when": "explorerViewletFocus && !inputFocus"
+    },
+    {
+        "key": "n",
+        "command": "explorer.newFile",
+        "when": "explorerViewletFocus && !inputFocus"
+    },
+    {
+        "key": "cmd+0",
+        "command": "workbench.action.zoomReset",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+r",
+        "command": "python.execInTerminal",
+        "when": "editorTextFocus && editorLangId == 'python'"
+    },
+    {
+        "key": "cmd+f",
+        "command": "workbench.action.terminal.focusFind",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "redo",
+        "when": "editorTextFocus && vim.mode == 'Normal'"
+    }
+]

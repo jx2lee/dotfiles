@@ -1,0 +1,124 @@
+{
+    "window.commandCenter": 1,
+    "workbench.colorTheme": "Shades of Purple (Super Dark)",
+    "code-runner.runInTerminal": true,
+    "screencastMode.fontSize": 20,
+    "screencastMode.keyboardOverlayTimeout": 500,
+    "screencastMode.verticalOffset": 0,
+    "screencastMode.keyboardOptions": {
+        "showCommandGroups": true,
+        "showKeys": false
+    },
+    "auto-run-command.rules": [
+        {
+            "condition": "always",
+            "command": "workbench.action.toggleScreencastMode",
+            "message": "Running a screencastMode"
+        }
+    ],
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": "comment",
+                "settings": {
+                    "fontStyle": "italic"
+                }
+            }
+        ]
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "vim.vimrc.enable": true,
+    "vim.vimrc.path": "$HOME/.vimrc",
+    "vim.useCtrlKeys": true,
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "u"
+            ],
+            "commands": [
+                "undo"
+            ]
+        },
+        {
+            "before": [
+                "<C-r>"
+            ],
+            "commands": [
+                "redo"
+            ]
+        }
+    ],
+    "files.autoSave": "afterDelay",
+    "codeWebChat.presets": [
+        {
+            "name": "AI Studio",
+            "chatbot": "AI Studio",
+            "temperature": 0.5,
+            "systemInstructions": "You're a helpful coding assistant."
+        },
+        {
+            "name": "Gemini",
+            "chatbot": "Gemini"
+        },
+        {
+            "name": "ChatGPT",
+            "chatbot": "ChatGPT"
+        },
+        {
+            "name": "Claude",
+            "chatbot": "Claude"
+        },
+        {
+            "name": "Grok",
+            "chatbot": "Grok"
+        },
+        {
+            "name": "Grok (Think)",
+            "chatbot": "Grok",
+            "options": [
+                "think"
+            ]
+        },
+        {
+            "name": "DeepSeek",
+            "chatbot": "DeepSeek"
+        },
+        {
+            "name": "DeepSeek - DeepThink (R1)",
+            "chatbot": "DeepSeek",
+            "options": [
+                "deep-think"
+            ]
+        },
+        {
+            "name": "Qwen",
+            "chatbot": "Qwen"
+        },
+        {
+            "name": "Yuanbao",
+            "chatbot": "Yuanbao",
+            "model": "deepseek"
+        },
+        {
+            "name": "Doubao",
+            "chatbot": "Doubao"
+        },
+        {
+            "name": "Mistral",
+            "chatbot": "Mistral"
+        },
+        {
+            "name": "HuggingChat",
+            "chatbot": "HuggingChat"
+        },
+        {
+            "name": "Open WebUI",
+            "chatbot": "Open WebUI",
+            "temperature": 0.5,
+            "systemInstructions": "You're a helpful coding assistant.",
+            "port": 3000
+        }
+    ],
+}
