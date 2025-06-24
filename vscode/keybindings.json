@@ -107,10 +107,5 @@
         "key": "cmd+f",
         "command": "workbench.action.terminal.focusFind",
         "when": "terminalFocus"
-    },
-    {
-        "key": "ctrl+r",
-        "command": "redo",
-        "when": "editorTextFocus && vim.mode == 'Normal'"
     }
 ]
