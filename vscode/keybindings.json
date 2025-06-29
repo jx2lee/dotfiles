@@ -107,5 +107,17 @@
         "key": "cmd+f",
         "command": "workbench.action.terminal.focusFind",
         "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "-go.test.previous"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "-workbench.action.openRecent"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "-workbench.action.tasks.reRunTask"
     }
 ]
