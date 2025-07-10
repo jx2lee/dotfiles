@@ -119,5 +119,15 @@
     {
         "key": "ctrl+r",
         "command": "-workbench.action.tasks.reRunTask"
+    },
+    {
+        "key": "f3",
+        "command": "-editor.action.nextMatchFindAction",
+        "when": "editorFocus"
+    },
+    {
+        "key": "f3",
+        "command": "bookmarks.toggle",
+        "when": "editorTextFocus && !editorReadonly && !inCompositeEditor"
     }
 ]

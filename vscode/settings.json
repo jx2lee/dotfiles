@@ -50,6 +50,9 @@
             ]
         }
     ],
+    "vim.handleKeys": {
+        "<C-d>": true
+    },
     "files.autoSave": "afterDelay",
     "codeWebChat.presets": [
         {
@@ -121,4 +124,24 @@
             "port": 3000
         }
     ],
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/.classpath": true,
+        "**/.factorypath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.venv": true,
+        "**/.yarn/cache": true
+    },
+    // Python settings 2025-07-05
+    "python.analysis.indexing": true,
+    "python.languageServer": "Pylance",
+    "python.analysis.include": [
+        "**/.venv"
+    ],
+    "python.analysis.diagnosticMode": "workspace",
+    "python.analysis.usePullDiagnostics": false,
 }
