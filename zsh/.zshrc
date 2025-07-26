@@ -124,10 +124,6 @@ source ~/.powerlevel10k/powerlevel10k.zsh-theme
 #env
 export OBSIDIAN_HOME=${HOME}/Library/Mobile\ Documents/iCloud\~md\~obsidian/Documents/main
 
-#asdf
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
-
-
 #golang
 . ~/.asdf/plugins/golang/set-env.zsh
 fpath+=~/.zfunc; autoload -Uz compinit; compinit
