@@ -121,16 +121,13 @@ source ~/.powerlevel10k/powerlevel10k.zsh-theme
 #fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+#cowsay|fortune|lolcat
+fortune -s | cowsay -f dragon-and-cow | lolcat
+
 #env
 export OBSIDIAN_HOME=${HOME}/Library/Mobile\ Documents/iCloud\~md\~obsidian/Documents/main
 
-#asdf
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
-
-
 #golang
-. ~/.asdf/plugins/golang/set-env.zsh
-fpath+=~/.zfunc; autoload -Uz compinit; compinit
 
 #cursor and code
 export CURSOR_HOME=$HOME/Library/Application\ Support/Cursor/User
@@ -141,3 +138,6 @@ export PATH="/opt/homebrew/opt/sqlite/bin:$PATH"
 
 #thefuck
 eval $(thefuck --alias)
+
+#asdf
+
