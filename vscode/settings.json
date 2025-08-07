@@ -1,6 +1,6 @@
 {
     "window.commandCenter": 1,
-    "workbench.colorTheme": "Shades of Purple (Super Dark)",
+    "workbench.colorTheme": "Winter is Coming (Dark Blue)",
     "code-runner.runInTerminal": true,
     "screencastMode.fontSize": 20,
     "screencastMode.keyboardOverlayTimeout": 500,
@@ -51,10 +51,34 @@
         }
     ],
     "vim.handleKeys": {
-        "<C-d>": true
+        "<C-d>": true,
     },
     "files.autoSave": "afterDelay",
-    "codeWebChat.presets": [
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/.classpath": true,
+        "**/.factorypath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.venv": true,
+        "**/.yarn/cache": true
+    },
+    // Python settings 2025-07-05
+    "python.languageServer": "Pylance",
+    "python.analysis.diagnosticMode": "workspace",
+    "python.analysis.packageIndexDepths": [
+        {
+            "name": "",
+            "depth": 4,
+            "includeAllSymbols": true
+        }
+    ],
+    "python.analysis.usePullDiagnostics": false,
+    "editor.mouseWheelZoom": true,
+    "codeWebChat.chatPresetsForEditContext": [
         {
             "name": "AI Studio",
             "chatbot": "AI Studio",
@@ -113,10 +137,6 @@
             "chatbot": "Mistral"
         },
         {
-            "name": "HuggingChat",
-            "chatbot": "HuggingChat"
-        },
-        {
             "name": "Open WebUI",
             "chatbot": "Open WebUI",
             "temperature": 0.5,
@@ -124,24 +144,5 @@
             "port": 3000
         }
     ],
-    "[json]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
-    },
-    "files.exclude": {
-        "**/__pycache__": true,
-        "**/.classpath": true,
-        "**/.factorypath": true,
-        "**/.project": true,
-        "**/.settings": true,
-        "**/.venv": true,
-        "**/.yarn/cache": true
-    },
-    // Python settings 2025-07-05
-    "python.analysis.indexing": true,
-    "python.languageServer": "Pylance",
-    "python.analysis.include": [
-        "**/.venv"
-    ],
-    "python.analysis.diagnosticMode": "workspace",
-    "python.analysis.usePullDiagnostics": false,
+    "vim.autoSwitchInputMethod.enable": true
 }

@@ -57,12 +57,22 @@
     {
         "key": "escape",
         "command": "workbench.action.focusActiveEditorGroup",
-        "when": "terminalFocus && !isInEmbeddedEditor && !terminalTextSelected && !terminalFindVisible && !terminalFindInputFocused"
+        "when": "explorerViewletFocus"
+    },
+    {
+        "key": "escape",
+        "command": "-workbench.action.focusActiveEditorGroup",
+        "when": "terminalFocus"
     },
     {
         "key": "escape",
         "command": "workbench.action.focusActiveEditorGroup",
-        "when": "explorerViewletFocus"
+        "when": "sideBarFocus && activeViewlet == 'workbench.view.search'"
+    },
+    {
+        "key": "escape",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "activePanel == 'workbench.view.search' || activeAuxiliary == 'workbench.view.search'"
     },
     {
         "key": "alt+cmd+z",
@@ -129,5 +139,15 @@
         "key": "f3",
         "command": "bookmarks.toggle",
         "when": "editorTextFocus && !editorReadonly && !inCompositeEditor"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "-workbench.action.debug.run",
+        "when": "!inDebugMode && !terminalFocus"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "-workbench.action.debug.run",
+        "when": "debuggersAvailable && !inDebugMode && !terminalFocus"
     }
 ]
