@@ -149,5 +149,11 @@
         "key": "ctrl+d",
         "command": "-workbench.action.debug.run",
         "when": "debuggersAvailable && !inDebugMode && !terminalFocus"
+    },
+    {
+        "key": "cmd+up",
+        "command": "breadcrumbs.focus",
+        "when": "editorTextFocus"
     }
 ]
+
