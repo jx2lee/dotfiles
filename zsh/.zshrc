@@ -109,7 +109,6 @@ export LANG=en_US.UTF-8
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-export PATH=${HOME}/.local/bin:$PATH
 
 #vim
 alias vi='vim'
@@ -132,9 +131,6 @@ export OBSIDIAN_HOME=${HOME}/Library/Mobile\ Documents/iCloud\~md\~obsidian/Docu
 #cursor and code
 export CURSOR_HOME=$HOME/Library/Application\ Support/Cursor/User
 export CODE_USER_HOME=$HOME/Library/Application\ Support/Code/User
-
-#sqlite
-export PATH="/opt/homebrew/opt/sqlite/bin:$PATH"
 
 #thefuck
 eval $(thefuck --alias)
