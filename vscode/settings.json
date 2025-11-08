@@ -1,10 +1,9 @@
 {
     "window.commandCenter": 1,
-    "workbench.colorTheme": "Winter is Coming (Dark Blue)",
+    "workbench.colorTheme": "GitHub Dark Colorblind (Beta)",
     "code-runner.runInTerminal": true,
     "screencastMode.fontSize": 20,
     "screencastMode.keyboardOverlayTimeout": 500,
-    "screencastMode.verticalOffset": 0,
     "screencastMode.keyboardOptions": {
         "showCommandGroups": true,
         "showKeys": false
@@ -77,7 +76,6 @@
         }
     ],
     "python.analysis.usePullDiagnostics": false,
-    "editor.mouseWheelZoom": true,
     "codeWebChat.chatPresetsForEditContext": [
         {
             "name": "AI Studio",
@@ -144,5 +142,17 @@
             "port": 3000
         }
     ],
-    "vim.autoSwitchInputMethod.enable": true
+    "vim.autoSwitchInputMethod.enable": true,
+    "window.zoomPerWindow": false,
+    "redhat.telemetry.enabled": true,
+    "screencastMode.verticalOffset": 5,
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "terminal.integrated.fontSize": 15,
+    "editor.mouseWheelZoom": true
 }

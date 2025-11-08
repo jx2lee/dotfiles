@@ -164,5 +164,25 @@
         "key": "cmd+.",
         "command": "-editor.action.quickFix",
         "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "cmd+shift+[",
+        "command": "workbench.action.previousEditor",
+        "when": "editorTextFocus && !terminalFocus"
+    },
+    {
+        "key": "cmd+shift+]",
+        "command": "workbench.action.nextEditor",
+        "when": "editorTextFocus && !terminalFocus"
+    },
+    {
+        "key": "cmd+shift+[",
+        "command": "workbench.action.terminal.focusPrevious",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+shift+]",
+        "command": "workbench.action.terminal.focusNext",
+        "when": "terminalFocus"
     }
 ]
