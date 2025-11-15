@@ -1,5 +1,15 @@
 // Place your key bindings in this file to override the defaults
 [
+    // remove default keybindings
+    {
+        "key": "cmd+shift+[",
+        "command": "-workbench.action.terminal.focusPrevious"
+    },
+    {
+        "key": "cmd+shift+]",
+        "command": "-workbench.action.terminal.focusNext"
+    },
+    // custom for Jetbrain users
     {
         "key": "cmd+w",
         "command": "workbench.action.terminal.kill",
@@ -13,12 +23,12 @@
     {
         "key": "cmd+shift+]",
         "command": "workbench.action.terminal.focusNext",
-        "when": "terminalFocus"
+        "when": "editorFocus && !terminalFocus"
     },
     {
         "key": "cmd+shift+[",
         "command": "workbench.action.terminal.focusPrevious",
-        "when": "terminalFocus"
+        "when": "editorFocus && !terminalFocus"
     },
     {
         "key": "cmd+n",
@@ -183,6 +193,31 @@
     {
         "key": "cmd+shift+]",
         "command": "workbench.action.terminal.focusNext",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+3",
+        "command": "-workbench.view.search",
+        "when": "workbench.view.search.active && !searchViewletVisible"
+    },
+    {
+        "key": "cmd+3",
+        "command": "-workbench.action.toggleSidebarVisibility",
+        "when": "searchViewletVisible"
+    },
+    {
+        "key": "cmd+shift+=",
+        "command": "workbench.action.terminal.fontZoomIn",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+shift+-",
+        "command": "workbench.action.terminal.fontZoomOut",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+shift+0",
+        "command": "workbench.action.terminal.fontZoomReset",
         "when": "terminalFocus"
     }
 ]
