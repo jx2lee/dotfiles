@@ -219,5 +219,15 @@
         "key": "cmd+shift+0",
         "command": "workbench.action.terminal.fontZoomReset",
         "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+3",
+        "command": "outline.focus",
+        "when": "focusedView != 'outline'"
+    },
+    {
+        "key": "cmd+3",
+        "command": "workbench.action.toggleSidebarVisibility",
+        "when": "sideBarFocus && focusedView == 'outline'"
     }
 ]
