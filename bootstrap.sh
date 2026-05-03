@@ -10,6 +10,15 @@ if [[ "$1" == "--install-packages" ]]; then
   fi
 
   if command -v code &>/dev/null; then
-    xargs -L 1 code --install-extension < vscode/vscode-extensions.txt
+    # install extension when not current installed && to install extensions
+    comm -23 \
+      <(sort vscode/vscode-extensions.txt) \
+      <(code --list-extensions --show-versions 2>/dev/null | sort) \
+      | xargs -r -L 1 code --install-extension
+  fi
+
+  if [[ "$(uname -s)" == "Darwin" ]] && command -v zed &>/dev/null; then
+    install -d "$HOME/.config/zed"
+    cp "$REPO_ROOT/zed/keymap.json" "$HOME/.config/zed/keymap.json"
   fi
 fi
