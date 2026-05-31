@@ -1,0 +1,48 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "Global",
+    "bindings": {
+      // "shift-ctrl-alt-cmd-left": "workspace::IncreaseActiveDockSize",
+      // "shift-ctrl-alt-cmd-right": "pane::IncreaseWidth",
+      // "shift-ctrl-alt-cmd-up": "pane::DecreaseHeight",
+      // "shift-ctrl-alt-cmd-down": "pane::IncreaseHeight",
+      "cmd-shift-'": "workspace::ToggleZoom",
+    },
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      // "shift shift": "file_finder::Toggle"
+    },
+  },
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      // "j k": "vim::NormalBefore"
+    },
+  },
+  {
+    "context": "Editor && vim_mode == normal",
+    "bindings": {
+      "ctrl-alt-shift-down": "editor::GoToHunk",
+      "ctrl-alt-shift-up": "editor::GoToPreviousHunk",
+    },
+  },
+  {
+    "bindings": {
+      "cmd-\"": "workspace::ToggleZoom",
+    },
+  },
+  {
+    "unbind": {
+      "cmd-~": "git::Branch",
+    },
+  },
+]
