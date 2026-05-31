@@ -10,6 +10,7 @@ This repository contains configuration files for:
 - Zsh (with Oh My Zsh and Powerlevel10k theme)
 - Vim
 - VS Code (settings, keybindings, and extensions)
+- Zed (keymap)
 - Git
 - Homebrew packages
 
@@ -19,6 +20,7 @@ This repository contains configuration files for:
 - [Homebrew](https://brew.sh/)
 - [GNU Stow](https://www.gnu.org/software/stow/)
 - [VS Code](https://code.visualstudio.com/)
+- [Zed](https://zed.dev/)
 
 ### Installation
 
@@ -35,8 +37,16 @@ cd dotfiles
 
 This will:
 - Symlink all configuration files using stow
+
+3. Optionally install packages and editor extensions:
+```bash
+./bootstrap.sh --install-packages
+```
+
+This will:
 - Install Homebrew packages and casks from `brew/Brewfile`
-- Install VS Code extensions from `vscode/vscode-extensions.txt`
+- Install missing VS Code extensions from `vscode/vscode-extensions.txt`
+- Copy `zed/keymap.json` to `$HOME/.config/zed/keymap.json` on macOS when `zed` is installed
 
 ### Components
 
@@ -59,6 +69,10 @@ This will:
 - Various extensions for development (Python, Go, Docker, etc.)
 - Screencast mode configuration
 - Auto-save enabled
+
+#### Zed Setup
+- Custom keymap synced to `$HOME/.config/zed/keymap.json`
+- Applied only on macOS when the `zed` command is available
 
 #### Git Configuration
 - User information
