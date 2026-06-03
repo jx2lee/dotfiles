@@ -31,7 +31,7 @@
   {
     "context": "Editor && vim_mode == normal",
     "bindings": {
-      "ctrl-alt-shift-down": "editor::GoToHunk",
+      // "ctrl-alt-shift-down": "editor::GoToHunk",
       "ctrl-alt-shift-up": "editor::GoToPreviousHunk",
     },
   },
@@ -45,4 +45,49 @@
       "cmd-~": "git::Branch",
     },
   },
+  {
+    "bindings": {
+      "ctrl-alt-cmd-shift-up": "vim::ResizePaneUp"
+    }
+  },
+  {
+    "context": "(VimControl && !menu) || (!Editor && !Terminal)",
+    "unbind": {
+      "ctrl-w +": "vim::ResizePaneUp"
+    }
+  },
+  {
+    "bindings": {
+      "ctrl-alt-cmd-shift-down": "vim::ResizePaneDown"
+    }
+  },
+  {
+    "context": "(VimControl && !menu) || (!Editor && !Terminal)",
+    "unbind": {
+      "ctrl-w -": "vim::ResizePaneDown"
+    }
+  },
+  {
+    "bindings": {
+      "ctrl-alt-cmd-shift-left": "vim::ResizePaneLeft"
+    }
+  },
+  {
+    "context": "(VimControl && !menu) || (!Editor && !Terminal)",
+    "unbind": {
+      "ctrl-w <": "vim::ResizePaneLeft"
+    }
+  },
+  {
+    "bindings": {
+      "ctrl-alt-cmd-shift-right": "vim::ResizePaneRight"
+    }
+  },
+  {
+    "context": "(VimControl && !menu) || (!Editor && !Terminal)",
+    "unbind": {
+      "ctrl-w >": "vim::ResizePaneRight"
+    }
+  }
 ]
+
