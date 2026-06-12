@@ -88,6 +88,11 @@
     "unbind": {
       "ctrl-w >": "vim::ResizePaneRight"
     }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "alt-tab": "workspace::ActivateNextPane"
+    }
   }
 ]
-
