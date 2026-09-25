@@ -10,7 +10,7 @@ This repository contains configuration files for:
 - Zsh (with Oh My Zsh and Powerlevel10k theme)
 - Vim
 - VS Code (settings, keybindings, and extensions)
-- Zed (keymap)
+- Zed (settings and keymap)
 - Git
 - Homebrew packages
 
@@ -46,7 +46,6 @@ This will:
 This will:
 - Install Homebrew packages and casks from `brew/Brewfile`
 - Install missing VS Code extensions from `vscode/vscode-extensions.txt`
-- Copy `zed/keymap.json` to `$HOME/.config/zed/keymap.json` on macOS when `zed` is installed
 
 ### Components
 
@@ -71,8 +70,9 @@ This will:
 - Auto-save enabled
 
 #### Zed Setup
-- Custom keymap synced to `$HOME/.config/zed/keymap.json`
-- Applied only on macOS when the `zed` command is available
+- Settings and keymap in `zed/.config/zed/` are symlinked to `$HOME/.config/zed/` when running `./bootstrap.sh --install-packages` on macOS with the `zed` command available.
+- Existing files or conflicting symlinks are moved to `<filename>.<UTC ISO-8601 timestamp>.backup` (for example, `settings.json.2026-09-25T05:30:00Z.backup`). Correct links are kept on subsequent runs.
+- Existing backup names or unexpected directories cause an error instead of being overwritten.
 
 #### Git Configuration
 - User information
