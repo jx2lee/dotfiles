@@ -12,6 +12,7 @@ This repository contains configuration files for:
 - VS Code (settings, keybindings, and extensions)
 - Zed (settings and keymap)
 - Git
+- Hammerspoon
 - Homebrew packages
 
 ### Prerequisites
@@ -21,6 +22,7 @@ This repository contains configuration files for:
 - [GNU Stow](https://www.gnu.org/software/stow/)
 - [VS Code](https://code.visualstudio.com/)
 - [Zed](https://zed.dev/)
+- [Hammerspoon](https://www.hammerspoon.org/)
 
 ### Installation
 
@@ -80,6 +82,11 @@ This will:
 - Branch and tag sorting
 - Push and fetch configurations
 - Rebase settings
+
+#### Hammerspoon Configuration
+- `hammerspoon/.hammerspoon/init.lua` is symlinked to `$HOME/.hammerspoon/init.lua` when running `./bootstrap.sh`
+- Switches the input source to English on `Esc`, `Ctrl+C`, and `Ctrl+[`
+- Applies to Ghostty and VS Code
 
 #### Homebrew Packages
 Includes essential development tools and applications:

@@ -3,7 +3,7 @@ set -e
 REPO_ROOT=$(cd "$(dirname "$0")" && pwd)
 CURRENT_TIMESTAMP=$(date -u '+%Y-%m-%dT%H:%M:%SZ')
 
-stow --dir $REPO_ROOT --target $HOME zsh vim git tmux
+stow --dir $REPO_ROOT --target $HOME zsh vim git tmux hammerspoon
 
 if [[ "$1" == "--install-packages" ]]; then
   if command -v brew &>/dev/null; then
