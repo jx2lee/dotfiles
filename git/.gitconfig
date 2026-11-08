@@ -4,7 +4,7 @@ name = jx2lee
 email = dev.jaejun.lee.1991@gmail.com
 
 [credential]
-helper = store
+helper = osxkeychain
 
 [hub]
 protocol = https
@@ -16,6 +16,7 @@ postBuffer = 524288000
 [core]
 fsmonitor = true
 untrackedCache = true
+quotepath = false
 
 [branch]
 sort = -committerdate
@@ -41,3 +42,13 @@ verbose = true
 
 [rebase]
 updateRefs = true
+
+[gui]
+encoding = utf-8
+
+[i18n]
+logOutputEncoding = utf-8
+
+# Machine-specific settings (not tracked). Keep this last so it can override the above.
+[include]
+path = ~/.gitconfig.local
